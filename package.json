@@ -1,0 +1,25 @@
+{
+  "name": "next-sanity-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A monorepo with Next.js frontend and Sanity CMS",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run --recursive build",
+    "lint": "pnpm run --recursive lint",
+    "clean": "pnpm run --recursive clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.1"
+}
