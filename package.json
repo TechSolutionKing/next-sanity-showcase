@@ -9,9 +9,15 @@
   ],
   "scripts": {
     "dev": "pnpm run --parallel dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:sanity": "pnpm --filter showcase dev",
     "build": "pnpm run --recursive build",
+    "build:frontend": "pnpm --filter frontend build",
+    "build:sanity": "pnpm --filter showcase build",
     "lint": "pnpm run --recursive lint",
-    "clean": "pnpm run --recursive clean"
+    "lint:fix": "pnpm run --recursive lint -- --fix",
+    "clean": "pnpm run --recursive clean",
+    "start": "pnpm --filter frontend start"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
